@@ -5,21 +5,28 @@ using UnityEngine.UI;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-
+    [Header("Основное")]
     public GameObject settings;
+
+    [Header("Список героев")]
     public GameObject HeroesListSetting;
     public GameObject HeroesListWiew;
-
-
-    public List<int> hoursHeroes = new List<int>();
-
     public List<GameObject> activeHeroesList = new List<GameObject>();
 
-    private void UpdateList()
+    [Header("Роли")]
+    public Toggle[] InputMainRol;
+    public InputField[] InputSrRolies;
+    public Transform[] DsplayRol;
+    public Sprite[] SpriteRol;
+
+    [Header("Ники")]
+    public InputField[] InputNames;
+    public Text[] DsplayNames;
+
+    private void UpdateListHero()
     {
         int maxHour = 0;
 
-        hoursHeroes.Clear();
         activeHeroesList.Clear();
 
         for (int i = 0; i < HeroesListSetting.transform.childCount; i++)
@@ -47,8 +54,6 @@ public class NewBehaviourScript : MonoBehaviour
             {
                 HeroesListWiew.transform.GetChild(i).gameObject.SetActive(false);
             }
-
-            hoursHeroes.Add(hour); // Добовляем час в список
             if (hour > maxHour) maxHour = hour;
         }
 
@@ -90,24 +95,75 @@ public class NewBehaviourScript : MonoBehaviour
 
     }
 
+    public void UpdateHeader()
+    {
+        if(InputNames[0].text != "")
+            DsplayNames[0].text = (InputNames[0].text).ToUpper();
+        else
+            DsplayNames[0].text = "HIDDEN";
+
+        if (InputNames[1].text != "")
+            DsplayNames[1].text = ("Diskord Tag: " + InputNames[1].text).ToUpper();
+        else
+            DsplayNames[1].text = "";
+
+        if (InputNames[2].text != "")
+            DsplayNames[2].text = ("Battlenet Tag: " + InputNames[2].text).ToUpper();
+        else
+            DsplayNames[2].text = "";
+    }
+
+    public void UpdateRoles()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            Debug.Log("Основной цыкл, проход " + i);
+            string srString = InputSrRolies[i].text;
+            if (srString == "") srString = "0";
+            int sr = System.Convert.ToInt32(srString);
+            int spriteID = 0;
+
+            Debug.Log(InputSrRolies[i]);
+
+            DsplayRol[i].GetChild(1).gameObject.SetActive(InputSrRolies[i]);
+
+
+            DsplayRol[i].GetChild(3).gameObject.transform.GetChild(0).GetComponent<Text>().text = sr.ToString();
+
+
+            for (int l = 3; l < 11; l++)
+            {
+                //Debug.Log("Проврка рейтинга, проход " + l);
+                if (sr < l * 500)
+                {
+                    spriteID = l - 3;
+                    //Debug.Log("Установка прайта, sr(" + sr + ") мньше " + l * 500);
+                    break;
+                }
+                else if(sr > 3999)
+                {
+                    spriteID = 6;
+                    break;
+                }
+            }
+
+            DsplayRol[i].GetChild(3).GetComponent<Image>().sprite = SpriteRol[spriteID];
+        }
+    }
 
     void Update()
     {
-
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (settings.activeSelf == true)
             {
-
-
-
-                UpdateList();
-
+                UpdateRoles();
+                UpdateHeader();
+                UpdateListHero();
                 settings.SetActive(false);
             }
             else
             {
-                
                 settings.SetActive(true);
             }
         }

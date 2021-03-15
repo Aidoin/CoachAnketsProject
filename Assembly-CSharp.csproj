@@ -58,9 +58,11 @@
      <Compile Include="Assets\ClassHero.cs" />
      <Compile Include="Assets\CleatText.cs" />
      <Compile Include="Assets\EnumClassHero.cs" />
-     <Compile Include="Assets\Exit.cs" />
+     <Compile Include="Assets\ExitProgram.cs" />
      <Compile Include="Assets\InputFieldEnterNumbersOnly.cs" />
      <Compile Include="Assets\NewBehaviourScript.cs" />
+     <Compile Include="Assets\Version.cs" />
+     <None Include="Assets\Обновления.txt" />
  <Reference Include="UnityEngine">
  <HintPath>A:/Programs/2019.4.22f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

@@ -1,5 +1,4 @@
-﻿
-public enum ClassHeroy
+﻿public enum ClassHeroy
 {
     Tank,
     Heal,
