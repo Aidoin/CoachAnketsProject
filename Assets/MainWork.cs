@@ -7,7 +7,8 @@ using UnityEngine.UI;
 public class MainWork : MonoBehaviour
 {
     [Header("Основное")]
-    public GameObject settings; // Само окно настройки
+    public GameObject Settings; // Само окно настройки
+    public GameObject CamSettings; 
 
     [Header("Список героев")]
     public Transform HeroesListSetting; // Список героев в настройках
@@ -55,16 +56,18 @@ public class MainWork : MonoBehaviour
 
     public void UpdateAll()
     {
-        if (settings.activeSelf == true)
+        if (CamSettings.activeSelf == true)
         {
             UpdateRoles();
             UpdateHeader();
             UpdateListHero();
-            settings.SetActive(false);
+            Settings.SetActive(false);
+            CamSettings.SetActive(false);
         }
         else
         {
-            settings.SetActive(true);
+            Settings.SetActive(true);
+            CamSettings.SetActive(true);
         }
     }
 

@@ -6,6 +6,7 @@ ScriptsOnlyBuild:
     - Hero
     - InputFieldEnterNumbersOnly
     - MainWork
+    - PhotoCapture
     - Version
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
@@ -77,37 +78,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11610}
     - Class: 114
-      Script: {instanceID: 11820}
+      Script: {instanceID: 11822}
     - Class: 114
-      Script: {instanceID: 12018}
+      Script: {instanceID: 12020}
     - Class: 114
-      Script: {instanceID: 12110}
+      Script: {instanceID: 12112}
     - Class: 114
-      Script: {instanceID: 12282}
+      Script: {instanceID: 12284}
     - Class: 114
-      Script: {instanceID: 12630}
+      Script: {instanceID: 12632}
     - Class: 114
-      Script: {instanceID: 12982}
+      Script: {instanceID: 12984}
     - Class: 114
-      Script: {instanceID: 13126}
+      Script: {instanceID: 13128}
     - Class: 114
-      Script: {instanceID: 13238}
+      Script: {instanceID: 13240}
     - Class: 114
-      Script: {instanceID: 13274}
+      Script: {instanceID: 13276}
     - Class: 114
-      Script: {instanceID: 13308}
+      Script: {instanceID: 13310}
     - Class: 114
-      Script: {instanceID: 13748}
+      Script: {instanceID: 13750}
     - Class: 114
-      Script: {instanceID: 13890}
+      Script: {instanceID: 13892}
     - Class: 114
-      Script: {instanceID: 14260}
+      Script: {instanceID: 14028}
     - Class: 114
-      Script: {instanceID: 14362}
+      Script: {instanceID: 14264}
     - Class: 114
-      Script: {instanceID: 14382}
+      Script: {instanceID: 14366}
     - Class: 114
-      Script: {instanceID: 14428}
+      Script: {instanceID: 14386}
+    - Class: 114
+      Script: {instanceID: 14432}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -187,7 +190,7 @@ ScriptsOnlyBuild:
     className: ActivationTrack
   - hash:
       serializedVersion: 2
-      Hash: ce75a03c77a7c9136a2dd98d0417b9e9
+      Hash: 68f94ab7654e8a6490974e0d0ecf0dc1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Version
@@ -233,6 +236,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_InputField
+  - hash:
+      serializedVersion: 2
+      Hash: d7737a35547e661e540469ced76b87f3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MakeScreenshotByMouseClick
   - hash:
       serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
@@ -547,7 +556,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: 82f097a7e09fb943b6a7977e35d4d9d1
+      Hash: 75e2307ce12b55a0d543393e86d96723
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MainWork
@@ -557,6 +566,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: MarkerTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 414a651b29b61a2b166032e49cebbe44
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PhotoCapture
   - hash:
       serializedVersion: 2
       Hash: d791aa6007fa3640be1164ea75bb087d
@@ -662,5 +677,5 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: "C:/Users/ship_/OneDrive/\u0420\u0430\u0431\u043E\u0447\u0438\u0439
-    \u0441\u0442\u043E\u043B/o.o/GitHub/CoachAnketsProject/Builds/Build-Alpha 0.4.4.11/CoachAnketsProject.exe"
+  playerPath: "A:/Windows/\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B/o.o/GitHub/CoachAnketsProject/Builds/Build-Alpha
+    0.5.4.12/CoachAnketsProject.exe"
