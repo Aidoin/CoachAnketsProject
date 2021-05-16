@@ -1,0 +1,173 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de39d573ee937bf4fbae5ffe75405841, type: 3}
+  m_Name: HeroyList
+  m_EditorClassIdentifier: 
+  heroes:
+  - name: ANA
+    Sprite: {fileID: 1712452101050707300, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 1
+    color: {r: 0.4156863, g: 0.50980395, b: 0.6745098, a: 1}
+  - name: ASHE
+    Sprite: {fileID: -6557408232952853390, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 2
+    color: {r: 0.34117648, g: 0.32941177, b: 0.36078432, a: 1}
+  - name: BAPTISTE
+    Sprite: {fileID: 1880253497734084969, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 1
+    color: {r: 0.31764707, g: 0.6862745, b: 0.78823537, a: 1}
+  - name: BASTION
+    Sprite: {fileID: 4312403445470787668, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 2
+    color: {r: 0.47058827, g: 0.5372549, b: 0.44705886, a: 1}
+  - name: BRIGITTE
+    Sprite: {fileID: 6224448604704787908, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 1
+    color: {r: 0.49411768, g: 0.30980393, b: 0.30588236, a: 1}
+  - name: D.VA
+    Sprite: {fileID: 8288626211070191338, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 0
+    color: {r: 0.93725497, g: 0.5411765, b: 0.76470596, a: 1}
+  - name: DOOMFIST
+    Sprite: {fileID: -8977614917270055343, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 2
+    color: {r: 0.45098042, g: 0.2392157, b: 0.23137257, a: 1}
+  - name: ECHO
+    Sprite: {fileID: 8093916128515774133, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 2
+    color: {r: 0.54901963, g: 0.74509805, b: 0.94117653, a: 1}
+  - name: GENJI
+    Sprite: {fileID: 3257485542445854437, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 2
+    color: {r: 0.58431375, g: 0.9490197, b: 0.21568629, a: 1}
+  - name: HANZO
+    Sprite: {fileID: -2158735581712862956, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 2
+    color: {r: 0.7294118, g: 0.69411767, b: 0.5058824, a: 1}
+  - name: JUNKRAT
+    Sprite: {fileID: 2632305264511480849, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 2
+    color: {r: 0.9294118, g: 0.72156864, b: 0.27450982, a: 1}
+  - name: "L\xDACIO"
+    Sprite: {fileID: 1198584475225028145, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 1
+    color: {r: 0.5019608, g: 0.77647066, b: 0.27450982, a: 1}
+  - name: MCCREE
+    Sprite: {fileID: 122011181878476863, guid: 364adc01d432b6e4a89acac97e131459, type: 3}
+    classHeroy: 2
+    color: {r: 0.69411767, g: 0.31764707, b: 0.3254902, a: 1}
+  - name: MERCY
+    Sprite: {fileID: -6590401926368765746, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 1
+    color: {r: 0.94117653, g: 0.9058824, b: 0.7176471, a: 1}
+  - name: MOIRA
+    Sprite: {fileID: 5596541207773619256, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 1
+    color: {r: 0.58431375, g: 0.41960788, b: 0.8862746, a: 1}
+  - name: ORISA
+    Sprite: {fileID: -5899513428383924290, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 0
+    color: {r: 0.24705884, g: 0.5254902, b: 0.21176472, a: 1}
+  - name: PHARAH
+    Sprite: {fileID: -2047377568350803031, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 2
+    color: {r: 0.18823531, g: 0.43137258, b: 0.7568628, a: 1}
+  - name: REAPER
+    Sprite: {fileID: 8785087283236018770, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 2
+    color: {r: 0.48235297, g: 0.20392159, b: 0.27450982, a: 1}
+  - name: REINHARDT
+    Sprite: {fileID: -2839192411493652734, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 0
+    color: {r: 0.5137255, g: 0.56078434, b: 0.6, a: 1}
+  - name: ROADHOG
+    Sprite: {fileID: -1639153489594509604, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 0
+    color: {r: 0.7176471, g: 0.5294118, b: 0.2784314, a: 1}
+  - name: SIGMA
+    Sprite: {fileID: -2646184916689316660, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 0
+    color: {r: 0.5568628, g: 0.5882353, b: 0.6156863, a: 1}
+  - name: SOLDIER:76
+    Sprite: {fileID: 3515658630383847007, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 2
+    color: {r: 0.38431376, g: 0.42352945, b: 0.5529412, a: 1}
+  - name: SOMBRA
+    Sprite: {fileID: -4509456376765687461, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 2
+    color: {r: 0.39607847, g: 0.27450982, b: 0.69411767, a: 1}
+  - name: SYMMETRA
+    Sprite: {fileID: 4365783118737410427, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 2
+    color: {r: 0.5411765, g: 0.7176471, b: 0.7960785, a: 1}
+  - name: "TORBJ\xD6RN"
+    Sprite: {fileID: 1242521837911504674, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 2
+    color: {r: 0.75294125, g: 0.42352945, b: 0.3921569, a: 1}
+  - name: TRACER
+    Sprite: {fileID: 7948706298048481085, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 2
+    color: {r: 0.854902, g: 0.5529412, b: 0.20784315, a: 1}
+  - name: WIDOWMAKER
+    Sprite: {fileID: 3342471191383195812, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 2
+    color: {r: 0.6117647, g: 0.38431376, b: 0.63529414, a: 1}
+  - name: WRECKING BALL
+    Sprite: {fileID: -6548068174275618813, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 0
+    color: {r: 0.8117648, g: 0.50980395, b: 0.19215688, a: 1}
+  - name: ZARYA
+    Sprite: {fileID: -5440715823705867799, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 0
+    color: {r: 0.9294118, g: 0.4784314, b: 0.69803923, a: 1}
+  - name: ZENYATTA
+    Sprite: {fileID: -7549954293653580038, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 1
+    color: {r: 0.9490197, g: 0.9058824, b: 0.4784314, a: 1}
+  - name: WINSTON
+    Sprite: {fileID: 641425663164243136, guid: 364adc01d432b6e4a89acac97e131459, type: 3}
+    classHeroy: 0
+    color: {r: 0.627451, g: 0.627451, b: 0.7254902, a: 1}
+  - name: MEI
+    Sprite: {fileID: 4118217158410054545, guid: 364adc01d432b6e4a89acac97e131459,
+      type: 3}
+    classHeroy: 2
+    color: {r: 0.41176474, g: 0.654902, b: 0.9176471, a: 1}
