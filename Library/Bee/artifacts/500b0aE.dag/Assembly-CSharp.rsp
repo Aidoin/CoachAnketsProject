@@ -317,10 +317,10 @@
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/500b0aE.dag/VSSettingsProvider.ref.dll"
-"Assets/FillingCellsHeroesInSettings.cs"
 "Assets/Scripts/CleatText.cs"
 "Assets/Scripts/EnumClassHero.cs"
 "Assets/Scripts/ExitProgram.cs"
+"Assets/Scripts/FillingCellsHeroesInSettings.cs"
 "Assets/Scripts/Hero.cs"
 "Assets/Scripts/HeroValues.cs"
 "Assets/Scripts/HeroyList.cs"
@@ -329,12 +329,12 @@
 "Assets/Scripts/MainWork.cs"
 "Assets/Scripts/MakeScreenshotByMouseClick.cs"
 "Assets/Scripts/PhotoCapture.cs"
+"Assets/Scripts/SortingHeroes.cs"
 "Assets/Scripts/StringEx.cs"
+"Assets/Scripts/UpdatingCard.cs"
 "Assets/Scripts/UploadingAvatar.cs"
 "Assets/Scripts/UploadingImage.cs"
 "Assets/Scripts/Version.cs"
-"Assets/SortingHeroes.cs"
-"Assets/UpdatingCard.cs"
 -langversion:8.0
 
 /deterministic
