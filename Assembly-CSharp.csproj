@@ -59,6 +59,8 @@
     <Compile Include="Assets\Scripts\MakeScreenshotByMouseClick.cs" />
     <Compile Include="Assets\Scripts\InputFieldEnterNumbersOnly.cs" />
     <Compile Include="Assets\Scripts\UploadingImage.cs" />
+    <Compile Include="Assets\UpdatingCard.cs" />
+    <Compile Include="Assets\SortingHeroes.cs" />
     <Compile Include="Assets\FillingCellsHeroesInSettings.cs" />
     <Compile Include="Assets\Scripts\CleatText.cs" />
     <Compile Include="Assets\Scripts\HeroyList.cs" />
@@ -72,8 +74,6 @@
     <Compile Include="Assets\Scripts\UploadingAvatar.cs" />
     <Compile Include="Assets\Scripts\StringEx.cs" />
     <Compile Include="Assets\Scripts\MainWork.cs" />
-    <Compile Include="Assets\SortingHeroes.cs" />
-    <Compile Include="Assets\UpdatingCard.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Обновления.txt" />
