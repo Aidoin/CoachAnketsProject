@@ -1,0 +1,888 @@
+fileFormatVersion: 2
+guid: 106e448cd47866e4697148506f29ef3e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6436304474697620235
+    second: Heroes3_0
+  - first:
+      213: -8983160485789981628
+    second: Heroes3_1
+  - first:
+      213: -8850005927302756549
+    second: Heroes3_2
+  - first:
+      213: -8956889788827011130
+    second: Heroes3_3
+  - first:
+      213: -2369967097361528365
+    second: Heroes3_4
+  - first:
+      213: 4167622699116136128
+    second: Heroes3_5
+  - first:
+      213: 9081586479154384063
+    second: Heroes3_6
+  - first:
+      213: 8767975584231528849
+    second: Heroes3_7
+  - first:
+      213: -8068542686605939170
+    second: Heroes3_8
+  - first:
+      213: 7058013712531348465
+    second: Heroes3_9
+  - first:
+      213: -4020572393977375035
+    second: Heroes3_10
+  - first:
+      213: 5412826968003260134
+    second: Heroes3_11
+  - first:
+      213: -8986189221697168714
+    second: Heroes3_12
+  - first:
+      213: 1089642249070118747
+    second: Heroes3_13
+  - first:
+      213: 535119883603563039
+    second: Heroes3_14
+  - first:
+      213: 5023224761853544015
+    second: Heroes3_15
+  - first:
+      213: -1047449049413322794
+    second: Heroes3_16
+  - first:
+      213: 313898992902846555
+    second: Heroes3_17
+  - first:
+      213: 2155325762409959695
+    second: Heroes3_18
+  - first:
+      213: 8782275909865786658
+    second: Heroes3_19
+  - first:
+      213: 6372077970702197724
+    second: Heroes3_20
+  - first:
+      213: -1560634852988739593
+    second: Heroes3_21
+  - first:
+      213: 4637380227952696367
+    second: Heroes3_22
+  - first:
+      213: 7380023757434345272
+    second: Heroes3_23
+  - first:
+      213: -2900577193550491432
+    second: Heroes3_24
+  - first:
+      213: 7979334491054279034
+    second: Heroes3_25
+  - first:
+      213: 4032288317017197551
+    second: Heroes3_26
+  - first:
+      213: 3775839374539210158
+    second: Heroes3_27
+  - first:
+      213: -62046082278599730
+    second: Heroes3_28
+  - first:
+      213: 1232993959044087162
+    second: Heroes3_29
+  - first:
+      213: -848648700714792869
+    second: Heroes3_30
+  - first:
+      213: 2369591126493184521
+    second: Heroes3_31
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Heroes3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1550
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0bdb9891d8525950800000000000000
+      internalID: 6436304474697620235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_1
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 1550
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 444a92c0227655380800000000000000
+      internalID: -8983160485789981628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_2
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1550
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b37840b9f767e2580800000000000000
+      internalID: -8850005927302756549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_3
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1550
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c774a4513cb2b380800000000000000
+      internalID: -8956889788827011130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_4
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1550
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d907684b7f2c1fd0800000000000000
+      internalID: -2369967097361528365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_5
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1550
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c60caa83ce56d930800000000000000
+      internalID: 4167622699116136128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1240
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbcccf659c6480e70800000000000000
+      internalID: 9081586479154384063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_7
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 1240
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1991b61d65b1ea970800000000000000
+      internalID: 8767975584231528849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_8
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1240
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ee6cdec27c60090800000000000000
+      internalID: -8068542686605939170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_9
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1240
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb544b931a13f160800000000000000
+      internalID: 7058013712531348465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_10
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1240
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c69c37a5be0438c0800000000000000
+      internalID: -4020572393977375035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_11
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1240
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee2d72f2793e1b40800000000000000
+      internalID: 5412826968003260134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 930
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6badb448384aa4380800000000000000
+      internalID: -8986189221697168714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_13
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 930
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5705143adf2f1f00800000000000000
+      internalID: 1089642249070118747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_14
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 930
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12507ee2b02d6700800000000000000
+      internalID: 535119883603563039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_15
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 930
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f460a358e4416b540800000000000000
+      internalID: 5023224761853544015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_16
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 930
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d7f561a3a6b671f0800000000000000
+      internalID: -1047449049413322794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_17
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 930
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b58b35f88713b5400800000000000000
+      internalID: 313898992902846555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 620
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0191bb8c5149ed10800000000000000
+      internalID: 2155325762409959695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_19
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 620
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d4507d869e0e970800000000000000
+      internalID: 8782275909865786658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_20
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 620
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3ebc4572b2e6850800000000000000
+      internalID: 6372077970702197724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_21
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 620
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ff138baed2875ae0800000000000000
+      internalID: -1560634852988739593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_22
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 620
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c5a875fb84b5040800000000000000
+      internalID: 4637380227952696367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_23
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 620
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83751df918c1b6660800000000000000
+      internalID: 7380023757434345272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 310
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d0d2de09641fb7d0800000000000000
+      internalID: -2900577193550491432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_25
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 310
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a79005b717a4cbe60800000000000000
+      internalID: 7979334491054279034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_26
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 310
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feb84cf3cd095f730800000000000000
+      internalID: 4032288317017197551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_27
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 310
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eadb758e7e9766430800000000000000
+      internalID: 3775839374539210158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_28
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 310
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec3541aba61932ff0800000000000000
+      internalID: -62046082278599730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_29
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 310
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d760b19797c1110800000000000000
+      internalID: 1232993959044087162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b584cc6c08ef834f0800000000000000
+      internalID: -848648700714792869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroes3_31
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 180
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9024b8d239a72e020800000000000000
+      internalID: 2369591126493184521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

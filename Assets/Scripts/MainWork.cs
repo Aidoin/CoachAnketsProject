@@ -8,13 +8,12 @@ public class MainWork : MonoBehaviour
 {
     [Header("Основное")]
     public GameObject Settings; // Само окно настройки
-    public GameObject CamSettings;
     public PhotoCapture photoCapture;
 
     [Header("Список героев")]
     public Transform HeroesListSetting; // Список героев в настройках
     public Transform HeroesListWiew; // Список героев в карточке
-    public GameObject Hero; // Префаб эллемента для списка героев в карточке
+    public GameObject HeroString; // Префаб эллемента для списка героев в карточке
     public HeroyList HeroyList;
 
     [Header("Роли")]
@@ -36,6 +35,7 @@ public class MainWork : MonoBehaviour
     public List<GameObject> mainHeroesList = new List<GameObject>(); // Лист для отображжения мейн героев в карточке
     private ClassHeroy mainClassHeroy; // Выбранный основной класс 
 
+    private float timeEscape = 0;
 
     private void Start()
     {
@@ -45,8 +45,11 @@ public class MainWork : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        timeEscape += Time.deltaTime;
+
+        if (Input.GetKeyDown(KeyCode.Escape) && timeEscape > 0.1f)
         {
+            timeEscape = 0;
             ShowCard();
         }
     }
@@ -54,16 +57,14 @@ public class MainWork : MonoBehaviour
 
     public void ShowCard()
     {
-        if (CamSettings.activeSelf == true)
+        if (Settings.activeSelf == true)
         {
-            UpdateAll();
             Settings.SetActive(false);
-            CamSettings.SetActive(false);
         }
         else
         {
+            UpdateAll();
             Settings.SetActive(true);
-            CamSettings.SetActive(true);
         }
     }
 
@@ -95,20 +96,12 @@ public class MainWork : MonoBehaviour
         int maxHour = 0; // Переменная для сохранения максимального значения сыгранных часов
         for (int i = 0; i < HeroesListSetting.childCount; i++) // перебераем элементы в списке героев в настройках
         {
-            int hour; // Колличество часов текущего элемента
-
-            // Перерабатываем текстовое значение в числовое
-            string str = HeroesListSetting.GetChild(i).GetChild(3).GetComponent<InputField>().text;
-            if (str == "") // Если значения нет
-                hour = 0; 
-            else 
-                hour = System.Convert.ToInt32(str);
-
-
+            int hour = HeroesListSetting.GetChild(i).GetComponent<HeroValues>().Hours; ; // Колличество часов текущего элемента
+            
             // Если сыгранные часы присутствуют в текущем элементе, то создаём элемент этого героя в карточке
-            if (hour != 0)
+            if (hour > 0)
             {
-                GameObject hero = Instantiate(Hero, HeroesListWiew);
+                GameObject hero = Instantiate(HeroString, HeroesListWiew);
                 Hero heroScript = hero.GetComponent<Hero>();
 
                 // Присваиваем эллементу в карточке значения текущего элемента
@@ -178,12 +171,12 @@ public class MainWork : MonoBehaviour
         if (InputNames[1].text != "")
             DsplayNames[1].text = "<color=#ff0000ff>   Discord Tag   </color> \n<i>  " + (InputNames[1].text).ToUpper() + "   </i>";
         else
-            DsplayNames[1].text = "  HIDDEN  ";
+            DsplayNames[1].text = "<color=#ff0000ff>   Discord Tag   </color> \n<i>  " + "  HIDDEN  " + "   </i>";
 
         if (InputNames[2].text != "")
             DsplayNames[2].text = "<color=#ff0000ff>   BattleTag   </color> \n<i>  " + (InputNames[2].text).ToUpper() + "   </i>";
         else
-            DsplayNames[2].text = "  HIDDEN  ";
+            DsplayNames[2].text = "<color=#ff0000ff>   BattleTag   </color> \n<i>  " + "  HIDDEN  " + "   </i>";
     }
 
 

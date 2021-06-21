@@ -23,6 +23,6 @@ public class Version : MonoBehaviour
     void Start()
     {
 
-        VersionText.text = "Specially for Jaristo Squad   " + StageDevelopment.ToString() + "  " + Application.version;
+        VersionText.text = "Specially for Jaristo Squad\n" + StageDevelopment.ToString() + "  " + Application.version;
     }
 }
