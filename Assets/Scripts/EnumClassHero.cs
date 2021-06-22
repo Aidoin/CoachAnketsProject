@@ -11,3 +11,20 @@ public enum ClassHeroy
     Dps,
     None
 }
+
+[SerializeField]
+public enum Card
+{
+    Killed_eSports = 0,
+    Jaristo_Squad = 1
+}
+
+[SerializeField]
+public enum Stage
+{
+    PreAlpha,
+    Alpha,
+    Beta,
+    ReleaseCandidate,
+    Release
+}

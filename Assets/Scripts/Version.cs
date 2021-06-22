@@ -4,25 +4,17 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum Stage
-{
-    PreAlpha,
-    Alpha,
-    Beta,
-    ReleaseCandidate,
-    Release
-}
 
 public class Version : MonoBehaviour
 {
 
     public Stage StageDevelopment = new Stage();
     public Text VersionText;
-    public InputField y;
+    [SerializeField] private MainWork mainWork;
 
     void Start()
     {
 
-        VersionText.text = "Specially for Jaristo Squad\n" + StageDevelopment.ToString() + "  " + Application.version;
+        VersionText.text = "Specially for "+ mainWork.SelectedCard + "\n" + StageDevelopment.ToString() + "  " + Application.version;
     }
 }

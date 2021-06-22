@@ -4,32 +4,37 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+
+
 public class MainWork : MonoBehaviour
 {
+
+    [SerializeField] private CardValue[] cards;
+
+    public Card SelectedCard;
+    private CardValue FunctioningCards;
+
     [Header("Основное")]
     public GameObject Settings; // Само окно настройки
     public PhotoCapture photoCapture;
 
     [Header("Список героев")]
     public Transform HeroesListSetting; // Список героев в настройках
-    public Transform HeroesListWiew; // Список героев в карточке
     public GameObject HeroString; // Префаб эллемента для списка героев в карточке
     public HeroyList HeroyList;
 
     [Header("Роли")]
     public Toggle[] InputMainRol; // Тоглы выбора основной роли
     public InputField[] InputSrRolies; // Текстовые поля для ввода рейтинга на ролях
-    public Transform[] DsplayRol; // Контейнеры ролей в карточке
     public Sprite[] SpriteRanks; // Спрайты разных рангов
 
     [Header("Ники")]
     public InputField[] InputNames; // Поля для ввода миени и тегов
-    public Text[] DsplayNames; // Тексты отображающие имя и теги в карточке
 
     [Header("Мейн Роль")]
     public Sprite[] MainHeroesSprites; // Иконки всех героев для мейн списка героев
     public GameObject MainHero; // Префаб эллемента для списка Мейн героев в карточке
-    public Transform DsplayMainHero; // Контейнер мейн героев
 
     public List<GameObject> activeHeroesList = new List<GameObject>(); // Лист для сортировки отображжения героев в карточке
     public List<GameObject> mainHeroesList = new List<GameObject>(); // Лист для отображжения мейн героев в карточке
@@ -40,6 +45,15 @@ public class MainWork : MonoBehaviour
     private void Start()
     {
         Screen.SetResolution(1920,1080,true);
+        FunctioningCards = cards[(int)SelectedCard];
+
+        for (int i = 0; i < cards.Length; i++)
+        {
+            cards[i].gameObject.SetActive(false);
+            cards[i].SettingsLogo.gameObject.SetActive(false);
+        }
+        FunctioningCards.gameObject.SetActive(true);
+        FunctioningCards.SettingsLogo.gameObject.SetActive(true);
     }
 
 
@@ -76,18 +90,25 @@ public class MainWork : MonoBehaviour
         UpdateListHero();
     }
 
+
     public void MakeScrenshot()
     {
+        StartCoroutine(CreateScrenshot());
+    }
+    IEnumerator CreateScrenshot()
+    {
         UpdateAll();
+        yield return null;
         photoCapture.MakeScrenshot();
     }
+
 
     private void UpdateListHero()
     {
         // удаляем текущие элементы из списка героев в карточке 
-        for (int i = 0; i < HeroesListWiew.childCount; i++)
+        for (int i = 0; i < FunctioningCards.HeroesListWiew.childCount; i++)
         {
-           Destroy(HeroesListWiew.GetChild(i).gameObject);
+           Destroy(FunctioningCards.HeroesListWiew.GetChild(i).gameObject);
         }
         activeHeroesList.Clear(); // Отчищаем сам лист
 
@@ -101,11 +122,10 @@ public class MainWork : MonoBehaviour
             // Если сыгранные часы присутствуют в текущем элементе, то создаём элемент этого героя в карточке
             if (hour > 0)
             {
-                GameObject hero = Instantiate(HeroString, HeroesListWiew);
+                GameObject hero = Instantiate(HeroString, FunctioningCards.HeroesListWiew);
                 Hero heroScript = hero.GetComponent<Hero>();
 
                 // Присваиваем эллементу в карточке значения текущего элемента
-                //heroScript.SetInfo(hour, HeroesNames[i], HeroesSprites[i], ClassHeroys[i], i, ColorHero[i]);
                 heroScript.SetInfo(hour, i, HeroyList.heroes[i]);
 
                 hero.name = HeroyList.heroes[i].name;
@@ -164,19 +184,19 @@ public class MainWork : MonoBehaviour
     private void UpdateHeader()
     {
         if(InputNames[0].text != "")
-            DsplayNames[0].text = (InputNames[0].text).ToUpper();
+            FunctioningCards.NickName.text = (InputNames[0].text).ToUpper();
         else
-            DsplayNames[0].text = "HIDDEN";
+            FunctioningCards.NickName.text = "HIDDEN";
 
         if (InputNames[1].text != "")
-            DsplayNames[1].text = "<color=#ff0000ff>   Discord Tag   </color> \n<i>  " + (InputNames[1].text).ToUpper() + "   </i>";
+            FunctioningCards.DiscordId.text = "<color=#" + FunctioningCards.ColorMain + ">   Discord Tag   </color> \n<i>  " + (InputNames[1].text).ToUpper() + "   </i>";
         else
-            DsplayNames[1].text = "<color=#ff0000ff>   Discord Tag   </color> \n<i>  " + "  HIDDEN  " + "   </i>";
+            FunctioningCards.DiscordId.text = "<color=#" + FunctioningCards.ColorMain + ">   Discord Tag   </color> \n<i>  " + "  HIDDEN  " + "   </i>";
 
         if (InputNames[2].text != "")
-            DsplayNames[2].text = "<color=#ff0000ff>   BattleTag   </color> \n<i>  " + (InputNames[2].text).ToUpper() + "   </i>";
+            FunctioningCards.BattleTag.text = "<color=#" + FunctioningCards.ColorMain + ">   BattleTag   </color> \n<i>  " + (InputNames[2].text).ToUpper() + "   </i>";
         else
-            DsplayNames[2].text = "<color=#ff0000ff>   BattleTag   </color> \n<i>  " + "  HIDDEN  " + "   </i>";
+            FunctioningCards.BattleTag.text = "<color=#" + FunctioningCards.ColorMain + ">   BattleTag   </color> \n<i>  " + "  HIDDEN  " + "   </i>";
     }
 
 
@@ -193,10 +213,10 @@ public class MainWork : MonoBehaviour
             int spriteID = 0;
 
             // Переключаем выделяющую рамку на положение выбора основной роли
-            DsplayRol[i].GetChild(1).gameObject.SetActive(InputMainRol[i].isOn);
+            FunctioningCards.Roles[i].GetChild(1).gameObject.SetActive(InputMainRol[i].isOn);
 
             // Вводим значение роли
-            DsplayRol[i].GetChild(3).gameObject.transform.GetChild(0).GetComponent<Text>().text = sr.ToString();
+            FunctioningCards.Roles[i].GetChild(3).gameObject.transform.GetChild(0).GetComponent<Text>().text = sr.ToString();
 
             // Изменение спрайта рейтинга в зависимости от ретинга (начало с 3 потому что минимальный спрайт длится до 1500)
             for (int l = 3; l < 11; l++)
@@ -214,14 +234,14 @@ public class MainWork : MonoBehaviour
             }
 
             // Установка выбранного спрайта
-            DsplayRol[i].GetChild(3).GetComponent<Image>().sprite = SpriteRanks[spriteID];
+            FunctioningCards.Roles[i].GetChild(3).GetComponent<Image>().sprite = SpriteRanks[spriteID];
         }
     }
 
 
     private void UpdateMainHero()
     {
-        // Очистка стпрых значений
+        // Очистка старых значений
         for (int i = 0; i < mainHeroesList.Count; i++)
         {
             Destroy(mainHeroesList[i]);
@@ -251,14 +271,25 @@ public class MainWork : MonoBehaviour
                 countHero++;
 
                 // Создаём карточку и настраиваем значения
-                GameObject hero = Instantiate(MainHero, DsplayMainHero);
-                Hero heroScript = activeHeroesList[i].GetComponent<Hero>();
-                hero.transform.GetChild(0).GetComponent<Image>().sprite = MainHeroesSprites[heroScript.HeroID];
-                hero.transform.GetChild(1).GetChild(0).GetComponent<Image>().fillAmount = heroScript.Bar.fillAmount;
-                hero.transform.GetChild(1).GetChild(1).GetComponent<Text>().text = heroScript.HoursText.text;
-                hero.name = heroScript.NameText.text;
+                GameObject hero = Instantiate(MainHero, FunctioningCards.ContainerMainHeroes);
                 mainHeroesList.Add(hero);
+
+                HeroMainValue heroValue = hero.GetComponent<HeroMainValue>();
+
+                Hero heroScript = activeHeroesList[i].GetComponent<Hero>();
+                heroValue.Icon.sprite = MainHeroesSprites[heroScript.HeroID];
+                heroValue.BarValue.fillAmount = heroScript.Bar.fillAmount;
+                heroValue.BarValue.color = StringEx.ToColor(FunctioningCards.ColorMain);
+                heroValue.Bar.color = StringEx.ToColor(FunctioningCards.ColorOff);
+                heroValue.Hours.text = heroScript.HoursText.text;
+                heroValue.name = heroScript.NameText.text;
             }
         }
+    }
+
+
+    public void ChangingAvatar(Sprite newAvatar)
+    {
+        FunctioningCards.ImageAvatar.sprite = newAvatar;
     }
 }

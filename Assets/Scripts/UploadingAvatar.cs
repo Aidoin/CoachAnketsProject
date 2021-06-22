@@ -8,9 +8,8 @@ public class UploadingAvatar : MonoBehaviour
     [SerializeField] private InputField path;
     [SerializeField] private Text textLog;
     [SerializeField] private Image imageSetting;
-    [SerializeField] private Image imageCard;
     [SerializeField] private Button button;
-
+    [SerializeField] private MainWork mainWork;
 
 
     public void Upload()
@@ -34,7 +33,7 @@ public class UploadingAvatar : MonoBehaviour
                 textLog.text = "Success!";
                 Sprite sprite = Sprite.Create(texture2D, new Rect(0, 0, texture2D.width, texture2D.height), new Vector2(.5f, .5f), 10f);
                 imageSetting.sprite = sprite;
-                imageCard.sprite = sprite;
+                mainWork.ChangingAvatar(sprite);
                 path.text = "";
                 button.interactable = true;
             });

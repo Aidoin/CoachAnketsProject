@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\InputFieldEnterNumbersOnly.cs" />
     <Compile Include="Assets\Scripts\UploadingImage.cs" />
     <Compile Include="Assets\Scripts\UpdatingCard.cs" />
+    <Compile Include="Assets\Scripts\HeroMainValue.cs" />
     <Compile Include="Assets\Scripts\SortingHeroes.cs" />
     <Compile Include="Assets\Scripts\FillingCellsHeroesInSettings.cs" />
     <Compile Include="Assets\Scripts\CleatText.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Assets\Scripts\UploadingAvatar.cs" />
     <Compile Include="Assets\Scripts\StringEx.cs" />
     <Compile Include="Assets\Scripts\MainWork.cs" />
+    <Compile Include="Assets\Scripts\CardValue.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Обновления.txt" />
