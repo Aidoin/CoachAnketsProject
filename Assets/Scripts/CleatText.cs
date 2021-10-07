@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class CleatText : MonoBehaviour
 {
-    public InputField[] Text;
+    public List<InputField> Texts = new List<InputField>();
 
     public void Clear()
     {
-        for (int i = 0; i < Text.Length; i++)
+        for (int i = 0; i < Texts.Count; i++)
         {
-            Text[i].text = "";
+            Texts[i].text = "";
         }
     }
 

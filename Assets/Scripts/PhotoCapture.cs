@@ -11,7 +11,7 @@ public class PhotoCapture : MonoBehaviour
 
     public void MakeScrenshot()
     {
-
+        RenderTexture renderTexture = CameraCard.targetTexture;
         int width = CameraCard.pixelWidth;
         int height = CameraCard.pixelHeight;
         Texture2D texture = new Texture2D(width, height);
@@ -21,7 +21,6 @@ public class PhotoCapture : MonoBehaviour
         CameraCard.targetTexture = targetTexture;
         CameraCard.Render();
 
-
         RenderTexture.active = targetTexture;
 
         Rect rect = new Rect(0, 0, width, height);
@@ -30,6 +29,6 @@ public class PhotoCapture : MonoBehaviour
 
         byte[] bytes = texture.EncodeToPNG();
         File.WriteAllBytes("Card_" + System.DateTime.Now.ToString("yyyy-MM-dd_HH.mm.ss") + ".png", bytes);
-        CameraCard.targetTexture = null;
+        CameraCard.targetTexture = renderTexture;
     }
 }

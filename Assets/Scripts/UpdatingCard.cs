@@ -13,6 +13,6 @@ public class UpdatingCard : MonoBehaviour
 
     public void UpdateCard()
     {
-        mainWork.UpdateAll();
+        mainWork.UpdateListHero();
     }
 }

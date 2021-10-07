@@ -10,7 +10,7 @@ public class SortingHeroes : MonoBehaviour
     public void ShowRoles(int indexRole)
     {
         ClassHeroy role = (ClassHeroy)indexRole;
-        Debug.Log(role);
+        
         // Скрыть всех героев
         for (int i = containerForHeroes.childCount - 1; i > -1; i--)
         {

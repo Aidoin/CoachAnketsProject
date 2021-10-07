@@ -69,6 +69,8 @@ public class FillingCellsHeroesInSettings : MonoBehaviour
 
             // »конка
             ThisHero.Icon.sprite = spriteHeroes[i];
+
+            FindObjectOfType<CleatText>().Texts.Add(ThisHero.HeroHours);
         }
     }
 }

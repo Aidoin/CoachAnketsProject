@@ -5,8 +5,6 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-
-
 public class MainWork : MonoBehaviour
 {
 
@@ -14,6 +12,7 @@ public class MainWork : MonoBehaviour
 
     public Card SelectedCard;
     private CardValue FunctioningCards;
+    [SerializeField] private Button buttonMakeScrenshot;
 
     [Header("Основное")]
     public GameObject Settings; // Само окно настройки
@@ -97,13 +96,15 @@ public class MainWork : MonoBehaviour
     }
     IEnumerator CreateScrenshot()
     {
-        UpdateAll();
-        yield return null;
+        buttonMakeScrenshot.interactable = false;
+        //UpdateAll();
+        yield return new WaitForSeconds(1);
         photoCapture.MakeScrenshot();
+        buttonMakeScrenshot.interactable = true;
     }
 
 
-    private void UpdateListHero()
+    public void UpdateListHero()
     {
         // удаляем текущие элементы из списка героев в карточке 
         for (int i = 0; i < FunctioningCards.HeroesListWiew.childCount; i++)
@@ -111,7 +112,6 @@ public class MainWork : MonoBehaviour
            Destroy(FunctioningCards.HeroesListWiew.GetChild(i).gameObject);
         }
         activeHeroesList.Clear(); // Отчищаем сам лист
-
 
         // Создаём элементы в списке героев в карточке 
         int maxHour = 0; // Переменная для сохранения максимального значения сыгранных часов
@@ -136,8 +136,6 @@ public class MainWork : MonoBehaviour
             if (hour > maxHour) maxHour = hour;
         }
         
-
-
         // Устанавливаем в карточке у всех эллементов максимальное ззначение для бара
         for (int i = 0; i < activeHeroesList.Count; i++)
         {
@@ -174,14 +172,15 @@ public class MainWork : MonoBehaviour
         UpdateMainHero();
 
         // Очитска лишних элементов (всех после 7)
-        for (int i = 7; i < activeHeroesList.Count; i++)
+        for (int i = 7; i < activeHeroesList.Count;)
         {
             Destroy(activeHeroesList[i]);
+            activeHeroesList.RemoveAt(i);
         }
     }
 
 
-    private void UpdateHeader()
+    public void UpdateHeader()
     {
         if(InputNames[0].text != "")
             FunctioningCards.NickName.text = (InputNames[0].text).ToUpper();
@@ -200,7 +199,7 @@ public class MainWork : MonoBehaviour
     }
 
 
-    private void UpdateRoles()
+    public void UpdateRoles()
     {
         for (int i = 0; i < 3; i++)
         {
@@ -236,6 +235,7 @@ public class MainWork : MonoBehaviour
             // Установка выбранного спрайта
             FunctioningCards.Roles[i].GetChild(3).GetComponent<Image>().sprite = SpriteRanks[spriteID];
         }
+        UpdateMainHero();
     }
 
 
@@ -262,7 +262,6 @@ public class MainWork : MonoBehaviour
         // Проверка класса героев
         for (int i = 0; i < activeHeroesList.Count; i++)
         {
-
             if (countHero == 3) // Если уже есть 3 карточки, останавливаем цыкл (UI Настроен максимально на 3 карточки)
                 return;
 

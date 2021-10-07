@@ -17,5 +17,4 @@ public struct Heroy
 public class HeroyList : ScriptableObject
 {
     public Heroy[] heroes; 
-
 }
